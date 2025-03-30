@@ -1,0 +1,13 @@
+<h2 class="mt-4">Jogadores</h2>
+<div class="row">
+  <div class="col-md-4" *ngFor="let player of players">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">{{ player.name }}</h5>
+        <p><strong>Altura:</strong> {{ player.height }}m</p>
+        <p><strong>Time Atual:</strong> {{ player.currentTeam }}</p>
+    
+      </div>
+    </div>
+  </div>
+</div>

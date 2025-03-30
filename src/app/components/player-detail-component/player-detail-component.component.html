@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="player-detail-component.component.css"> 
+
+<div class="player-card" *ngIf="player">
+  <div class="player-header">
+    <img [src]="player.photo" alt="{{ player.name }}" width="200" height="200">
+    <h2 class="player-name">{{ player.name }}</h2>
+  </div>
+  
+  <div class="player-details">
+    <p><strong>Posição:</strong> {{ player?.position }}</p>
+    <p><strong>Altura:</strong> {{ player?.heightInCm }} cm</p>
+     <p><strong>Peso:</strong> {{ player?.weightInKg }} kg</p>
+    <p><strong>Time Atual:</strong> {{ player?.currentTeam }}</p>
+     <p><strong>Liga:</strong> {{ leagueName }}</p>
+     <p><strong>Nacionalidade:</strong> {{ player.nationality }}</p>
+    <p><strong>Idade:</strong> {{ player?.age }}</p>
+   <p><strong>Experiência:</strong> {{ player.experience }}</p>
+   <p><strong>Saúde:</strong> {{ player.health }}</p>
+  </div>
+
+  <div class="player-teams">
+    <h3>Clubes Anteriores:</h3>
+    <ul>
+      <li *ngFor="let team of player.pastTeams">{{ team }}</li>
+    </ul>
+  </div>
+
+  <div class="player-titles">
+    <h3>Títulos por Clube:</h3>
+    <ul>
+      <li *ngFor="let club of getClubNames(player)">
+        {{ club }}: {{ player?.titlesPerClub?.[club] }} títulos
+      </li>
+    </ul>
+  </div>
+
+  <div class="player-stats">
+    <h3>Habilidades Técnicas:</h3>
+    <ul>
+      <li>Controle de Bola: {{ player?.technicalSkills?.ballControl }}</li>
+      <li>Passes: {{ player?.technicalSkills?.passing }}</li>
+      <li>Finalização: {{ player?.technicalSkills?.shooting }}</li>
+      <li>Drible: {{ player?.technicalSkills?.dribbling }}</li>
+      <li>Marcação: {{ player?.technicalSkills?.marking }}</li>
+    </ul>
+    
+    <h3>Atributos Mentais:</h3>
+    <ul>
+      <li>Concentração: {{ player?.mentalAttributes?.concentration }}</li>
+      <li>Resiliência: {{ player?.mentalAttributes?.resilience }}</li>
+      <li>Disciplina: {{ player?.mentalAttributes?.discipline }}</li>
+      <li>Liderança: {{ player.mentalAttributes.leadership }}</li>
+    </ul>
+  </div>
+
+  

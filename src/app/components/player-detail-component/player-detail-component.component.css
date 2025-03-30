@@ -1,0 +1,71 @@
+.player-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+.player-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.player-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #007bff;
+  object-fit: cover;
+}
+
+.player-name {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.player-details, .player-teams, .player-titles, .player-stats, .player-attributes {
+  flex: 2;
+  padding: 10px 20px;
+  color: #000000;
+}
+
+.player-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .player-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
