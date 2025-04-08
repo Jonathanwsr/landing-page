@@ -1,11 +1,11 @@
 <div *ngIf="league; else loading">
-    <h2>{{ league?.name }}</h2>
-    <img [src]="league?.photo" [alt]="league?.name" class="league-image" />
-    <p><strong>Total de Times:</strong> {{ league?.totalTeams }}</p>
-    <p><strong>Divisões:</strong> {{ league?.Divisions }}</p>
-    <p><strong>Órgão Regulamentador:</strong> {{ league?.Regulatorybody }}</p>
-    <p><strong>Prêmios:</strong> {{ league?.Awards }}</p>
-    <p><strong>País:</strong> {{ league?.Countries }}</p>
+    <h2>{{ league.name }}</h2>
+    <img [src]="league.photo" [alt]="league.name" class="league-image" />
+    <p><strong>Total de Times:</strong> {{ league.totalTeams }}</p>
+    <p><strong>Divisões:</strong> {{ league.Divisions }}</p>
+    <p><strong>Órgão Regulamentador:</strong> {{ league.Regulatorybody }}</p>
+    <p><strong>Prêmios:</strong> {{ league.Awards }}</p>
+    <p><strong>País:</strong> {{ league.Countries }}</p>
   </div>
   
   <ng-template #loading>

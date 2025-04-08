@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'players', component: PlayersComponent },
   { path: 'player/:id', component: PlayerDetailComponent, data: { renderMode: 'no-prerender' } },
   { path: 'leagues', component: LeagueComponent },
-  { path: 'leagues/:id', component: LeagueDetailComponent }
+  { path: 'leagues/:id', component: LeagueDetailComponent, data: { renderMode: 'no-prerender' } }
 ];
 
 @NgModule({

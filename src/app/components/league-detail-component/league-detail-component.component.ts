@@ -5,13 +5,14 @@ import { LeagueService } from 'services/LeagueService/league.service';
 import { League } from 'models/LeagueModel/league.model';
 
 @Component({
-  selector: 'app-league-detail',
-  standalone: true,
-  imports: [CommonModule],
+  selector: 'app-league-detail-component',
   templateUrl: './league-detail-component.component.html',
   styleUrls: ['./league-detail-component.component.css'],
-  providers: [LeagueService]
+  standalone: true,
+  imports: [CommonModule]
 })
+
+
 export class LeagueDetailComponent implements OnInit {
   league?: League;
 
