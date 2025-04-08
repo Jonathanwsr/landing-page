@@ -2,16 +2,17 @@
   "name": "landing-page-soccer",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build landing-page-soccer --configuration production",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:landing-page-soccer": "node dist/landing-page-soccer/server/server.mjs",
-    "dev:ssr": "ng run landing-page-soccer:serve-ssr",
-    "build:ssr": "ng build && ng run landing-page-soccer:server",
-    "serve:ssr": "node server.js"
-  },
+  "ng": "ng",
+  "start": "ng serve",
+  "build": "ng build --configuration production",
+  "watch": "ng build --watch --configuration development",
+  "test": "ng test",
+  "serve:ssr:landing-page-soccer": "node dist/landing-page-soccer/server/server.mjs",
+  "dev:ssr": "ng run landing-page-soccer:serve-ssr",
+  "build:ssr": "ng build && ng run landing-page-soccer:server",
+  "serve:ssr": "node server.js"
+},
+
   "private": true,
   "dependencies": {
     "@angular/common": "^19.2.0",
