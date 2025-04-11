@@ -80,7 +80,7 @@ Para mais informações sobre como usar o Angular CLI, visite a [Visão Geral e 
 
 # Deploy 
 
-Ultilizeuno vercel a parte grátis para fazer no deploy do projeto apenas o fron end.
+O deploy dói feito no vercel a parte grátis para fazer no deploy do projeto apenas o fron end.
 
 
 ## Link do projeto 
