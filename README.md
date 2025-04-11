@@ -77,3 +77,11 @@ ng e2e
 ## Recursos Adicionais
 Para mais informações sobre como usar o Angular CLI, visite a [Visão Geral e Referência de Comandos do Angular CLI](https://angular.dev/tools/cli).
 
+
+# Deploy 
+
+Ultilizeuno vercel a parte grátis para fazer no deploy do projeto apenas o fron end.
+
+
+## Link do projeto 
+https://landing-page-yhi4-git-master-jonathanwsrs-projects.vercel.app/
